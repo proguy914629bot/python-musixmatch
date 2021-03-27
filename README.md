@@ -2,7 +2,7 @@
 
 Simple integrate of API musixmatch.com with python
 
-[![Github Issues](http://img.shields.io/github/issues/hudsonbrendon/python-musixmatch.svg?style=flat)](https://github.com/hudsonbrendon/python-musixmatch/issues?sort=updated&state=open)
+[![Github Issues](http://img.shields.io/github/issues/proguy914629bot/python-musixmatch.svg?style=flat)](https://github.com/proguy914629bot/python-musixmatch/issues?sort=updated&state=open)
 ![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ![Logo](logo.jpg)
@@ -10,13 +10,7 @@ Simple integrate of API musixmatch.com with python
 # Quick start
 
 ```bash
-$ pip install pymusixmatch
-```
-
-or
-
-```bash
-$ python setup.py install
+$ pip install git+https://github.com/proguy914629bot/python-musixmatch.git
 ```
 
 # Authentication
