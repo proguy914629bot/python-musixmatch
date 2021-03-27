@@ -11,7 +11,7 @@ setup(
     license="MIT",
     packages=["musixmatch"],
     install_requires=[
-        "requests",
+        "aiohttp",
     ],
     zip_safe=False,
 )
