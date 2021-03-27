@@ -436,9 +436,9 @@ Note: This method requires a commercial plan.
 
 # Dependencies
 
-- Python 3.5
+- Python 3.7
 - [Pipenv](https://github.com/kennethreitz/pipenv)
-- [requests](http://docs.python-requests.org/en/latest/)
+- [aiohttp](https://docs.aiohttp.org/en/stable/)
 
 # License
 
