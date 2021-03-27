@@ -41,7 +41,7 @@ Parameters:
 - format - Decide the output type json or xml (default json).
 
 ```python
->>> musixmatch.chart_artists(1, 1)
+>>> await musixmatch.chart_artists(1, 1)
 ```
 
 ## Chart Tracks Get
@@ -57,7 +57,7 @@ Parameters:
 - format - Decide the output type json or xml (default json).
 
 ```python
->>> musixmatch.chart_tracks_get(1, 1)
+>>> await musixmatch.chart_tracks_get(1, 1)
 ```
 
 ## Chart Tracks Get
@@ -83,8 +83,10 @@ Parameters:
 - callback - jsonp callback
 - format - Decide the output type (json or xml)
 
+Note: This method requires a commercial plan.
+
 ```python
->>> musixmatch.track_search(q_artist='twentyonepilots', page_size=10, page=1, s_track_rating='desc')
+>>> await musixmatch.track_search(q_artist='twentyonepilots', page_size=10, page=1, s_track_rating='desc')
 ```
 
 ## Track Get
@@ -100,7 +102,7 @@ Parameters:
 - format - Decide the output type json or xml (default json).
 
 ```python
->>> musixmatch.track_get(15445219)
+>>> await musixmatch.track_get(15445219)
 ```
 
 ## Track Lyrics Get
@@ -114,7 +116,7 @@ Parameters:
 - format - Decide the output type json or xml (default json).
 
 ```python
->>> musixmatch.track_lyrics_get(15953433)
+>>> await musixmatch.track_lyrics_get(15953433)
 ```
 
 ## Track Snippet Get
@@ -129,7 +131,7 @@ Parameters:
 - format - Decide the output type json or xml (default json).
 
 ```python
->>> musixmatch.track_snippet_get(16860631)
+>>> await musixmatch.track_snippet_get(16860631)
 ```
 
 ## Track Snippet Get
@@ -148,7 +150,7 @@ Parameters:
 - format - Decide the output type json or xml (default json).
 
 ```python
->>> musixmatch.track_subtitle_get(14201829)
+>>> await musixmatch.track_subtitle_get(14201829)
 ```
 
 ## Track Richsync Get
@@ -171,7 +173,7 @@ Parameters:
 - format - Decide the output type json or xml (default json).
 
 ```python
->>> musixmatch.track_richsync_get(14201829)
+>>> await musixmatch.track_richsync_get(14201829)
 ```
 
 ## Track Lyrics Post
@@ -189,7 +191,7 @@ Parameters:
 - format - Decide the output type json or xml (default json).
 
 ```python
->>> musixmatch.track_lyrics_post(1471157, 'test')
+>>> await musixmatch.track_lyrics_post(1471157, 'test')
 ```
 
 ## Track Lyrics Post
@@ -209,7 +211,7 @@ Parameters:
 - format - Decide the output type json or xml (default json)
 
 ```python
->>> musixmatch.track_lyrics_feedback_post(1471157, 4193713, 'wrong_verses')
+>>> await musixmatch.track_lyrics_feedback_post(1471157, 4193713, 'wrong_verses')
 ```
 
 ## Matcher Lyrics Get
@@ -224,7 +226,7 @@ Parameters:
 - format - Decide the output type json or xml (default json)
 
 ```python
->>> musixmatch.matcher_lyrics_get('Sexy and I know it', 'LMFAO')
+>>> await musixmatch.matcher_lyrics_get('Sexy and I know it', 'LMFAO')
 ```
 
 ## Matcher Track Get
@@ -247,7 +249,7 @@ Parameters:
 - format - Decide the output type json or xml (default json).
 
 ```python
->>> musixmatch.matcher_track_get('Lose Yourself (soundtrack)', 'Eminem')
+>>> await musixmatch.matcher_track_get('Lose Yourself (soundtrack)', 'Eminem')
 ```
 
 ## Matcher Subtitle Get
@@ -266,7 +268,7 @@ Parameters:
 Note: This method requires a commercial plan.
 
 ```python
->>> musixmatch.matcher_subtitle_get('Sexy and I know it', 'LMFAO', 200, 3)
+>>> await musixmatch.matcher_subtitle_get('Sexy and I know it', 'LMFAO', 200, 3)
 ```
 
 ## Artist Get
@@ -280,7 +282,7 @@ Parameters:
 - format - Decide the output type json or xml (default json)
 
 ```python
->>> musixmatch.artist_get(118)
+>>> await musixmatch.artist_get(118)
 ```
 
 ## Artist Search
@@ -297,7 +299,7 @@ Parameters:
 - format - Decide the output type json or xml (default json).
 
 ```python
->>> musixmatch.artist_search('prodigy', 1, 1, 16439, '4a4ee089-93b1-4470-af9a-6ff575d32704')
+>>> await musixmatch.artist_search('prodigy', 1, 1, 16439, '4a4ee089-93b1-4470-af9a-6ff575d32704')
 ```
 
 ## Artist Album Get
@@ -315,7 +317,7 @@ Parameters:
 - format - Decide the output type json or xml (default json).
 
 ```python
->>> musixmatch.artist_albums_get(1039, 1, 1, 1, 'desc')
+>>> await musixmatch.artist_albums_get(1039, 1, 1, 1, 'desc')
 ```
 
 ## Artist Related Get
@@ -331,7 +333,7 @@ Parameters:
 - format - Decide the output type json or xml (default json).
 
 ```python
->>> musixmatch.artist_related_get(56, 1, 1)
+>>> await musixmatch.artist_related_get(56, 1, 1)
 ```
 
 ## Album Get
@@ -344,7 +346,7 @@ Parameters:
 - format - Decide the output type json or xml (default json).
 
 ```python
->>> musixmatch.album_get(14250417)
+>>> await musixmatch.album_get(14250417)
 ```
 
 ## Album Tracks Get
@@ -361,7 +363,7 @@ Parameters:
 - format - Decide the output type json or xml (default json).
 
 ```python
->>> musixmatch.album_tracks_get(13750844, 1, 1, '')
+>>> await musixmatch.album_tracks_get(13750844, 1, 1, '')
 ```
 
 ## Tracking Url Get
@@ -380,7 +382,7 @@ Parameters:
 - format - Decide the output type json or xml (default json).
 
 ```python
->>> musixmatch.album_tracks_get(13750844, 1, 1, '')
+>>> await musixmatch.album_tracks_get(13750844, 1, 1, '')
 ```
 
 ## Catalogue Dump Get
@@ -405,7 +407,7 @@ Dump of our catalogue in this format:
 Note: This method requires a commercial plan.
 
 ```python
->>> musixmatch.catalogue_dump_get('test')
+>>> await musixmatch.catalogue_dump_get('test')
 ```
 
 # Features
